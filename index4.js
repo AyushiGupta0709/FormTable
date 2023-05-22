@@ -119,58 +119,76 @@ function validateForm(){
 
 
               document.getElementById("phoneSpan").style.visibility="hidden";
+              var email=document.getElementById('email').value;
+              var phonenumber=document.getElementById('number').value;
 
 
-              const jsonData={
-                firstName: document.getElementById("firstName").value,
-                lastName:document.getElementById("lastName").value,
-                password:document.getElementById("password").value,
-                // confirmPassword:document.getElementById("confirm password").value
-                email:document.getElementById('email').value,
-                phonenumber:document.getElementById('number').value
+              var FirstName=localStorage.setItem("FirstName",firstName);
+              var LastName=localStorage.setItem("LastName",lastName);
+              var Password=localStorage.setItem("Password",password);
+              var Email=localStorage.setItem("Email",email);
+              var Phonenumber=localStorage.setItem("PhoneNumber",phonenumber);
+ 
 
-                // gender:document.getElementsByClassName("gender").value
-              }
-              var stringData=JSON.stringify(jsonData);
-              localStorage.setItem("DataInserted",stringData);
-              
+               FirstName=localStorage.getItem("FirstName",firstName);
+               LastName=localStorage.getItem("LastName",lastName);
+               Password=localStorage.getItem("Password",password);
+               Email=localStorage.getItem("Email",email);
+               Phonenumber=localStorage.getItem("PhoneNumber",phonenumber);
+            //    FirstName=localStorage.setItem("FirstName",firstName);
 
-              var getData=localStorage.getItem("DataInserted");
-              var parsed=JSON.parse(getData);
-              var objectfinal=Object.values(parsed);
-              console.log(parsed);
-              console.log(objectfinal);
-              var tbody=document.createElement("tbody");
-              var tr=document.createElement("tr");
-              for(i=0;i<5;i++){
-                var td=document.createElement("td");
-                  td.innerText=objectfinal[i];
-                  console.log(td.value);
+
+
+            let arr = [`${FirstName}`,`${LastName}`,`${Password}`,`${Email}`,`${Phonenumber}`];
+                console.log(LastName);
+                console.log(arr[1]);
+                const tbody=document.getElementById("tbody");
+                // var tbody=document.createElement("tbody");
+                var tr =document.createElement("tr");
+                for(i=0;i<arr.length;i++){
+                    var td=document.createElement("td");
+                    console.log(arr[i]); 
+                    // debugger        
+                    td.innerHTML=arr[i];
                     tr.appendChild(td);
-              }
-              tbody.appendChild(tr);
-             
+
+                  };
+                  tbody.appendChild(tr);
+                }
             }
         }
     }
-}
-//         function makeTable(FirstName,LastName,Password,Email,Gender,Phonenumber){
-                
-//                 let arr = [`${FirstName}`,`${LastName}`,`${Password}`,`${Email}`,`${Phonenumber}`];
-//                 console.log(LastName);
-//                 console.log(arr[1]);
-//                 const tbody =document.getElementById("tbody");
-//                 // var tbody=document.createElement("tbody");
-//                 var tr =document.createElement("tr");
-//                 for(i=0;i<arr.length;i++){
-//                     var td=document.createElement("td");
-//                     console.log(i);         
-//                     td.innerHTML=arr[i];
-//                     tr.appendChild(td);
-//                     // tbody.appendChild(tr);
 
-//                   };
-//                 //   document.getElementsByClassName('tableContainer').style.visibility="visible";
-//                   tbody.appendChild(tr);
+            //    makeTable(FirstName,LastName,Password,Email,Phonenumber);
 
-//                 }
+
+            //   const jsonData={
+            //     firstName: document.getElementById("firstName").value,
+            //     lastName:document.getElementById("lastName").value,
+            //     password:document.getElementById("password").value,
+            //     // confirmPassword:document.getElementById("confirm password").value
+            //     email:document.getElementById('email').value,
+            //     phonenumber:document.getElementById('number').value
+
+            //     // gender:document.getElementsByClassName("gender").value
+            //   }
+            //   var stringData=JSON.stringify(jsonData);
+            //   localStorage.setItem("DataInserted",stringData);
+              
+
+            //   var getData=localStorage.getItem("DataInserted");
+            //   var parsed=JSON.parse(getData);
+            //   var objectfinal=Object.values(parsed);
+            //   console.log(parsed);
+            //   console.log(objectfinal);
+            //   var tbody=document.createElement("tbody");
+            //   var tr=document.createElement("tr");
+            //   for(i=0;i<5;i++){
+            //     var td=document.createElement("td");
+            //       td.innerText=objectfinal[i];
+            //       console.log(td.value);
+            //         tr.appendChild(td);
+            //   }
+            //   tbody.appendChild(tr);
+             
+        
