@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index4.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body class="body">
+
+    <div class="container">
+        <div class="leftContainer">
+            <h3>Welcome</h3>
+            <h4>To</h4>
+            <h2>Gemini Solution</h2>
+            <button type="button" class="btn btn-light loginButton rounded-pill">Login</button>
+
+
+        </div>
+        <div class="rightContainer">
+                
+            <h2>Apply as a Employee</h2>
+            <form action="#">
+                <div class="formContainer">
+                   
+                    <div class="left">
+                        <div class="form-group row1">
+                            <label for="First Name" id="label1">First Name:</label>
+                            <input type="text" class="form-control" id="firstName" autocomplete="on"required placeholder="First Name">
+                            <p id="nameSpan">Please enter a valid name</p>
+                           
+                          </div>
+                          <div class="form-group row2">
+                            <label for="Last Name">Last Name:</label>
+                            <input type="text" class="form-control" id="lastName"autocomplete="on"required placeholder="Last Name">
+                            <p id="lastnameSpan">Please enter a valid name</p>
+                           
+                          </div>
+                          <div class="form-group row3">
+                            <label for="Password">Password</label>
+                            <input type="password" class="form-control" id="password"autocomplete="on" required placeholder="Password">
+                            <p id="passwordSpan">Please enter a valid name</p>
+                           
+                          </div>
+                          <div class="form-group row4">
+                            <label for="Confirm Password">Confirm Password</label>
+                            <input type="password" class="form-control" id="confirm password" autocomplete="on" required placeholder="confirm password">
+                            <p id="confirmpasswordSpan">Please enter a valid name</p>
+                           
+                        </div>
+                        <div class="form-check" id="radio">
+                            <input class="form-check-input" type="radio"  value="male" name="gender" id="male">
+                            <label class="form-check-label" for="male">
+                            Male
+                            </label>
+                          </div>
+                          <div class="form-check" id="radio">
+                            <input class="form-check-input" type="radio" name="gender"  value="female"id="female" checked>
+                            <label class="form-check-label" for="female">
+                              Female
+                            </label>
+                          </div>
+                          <br><br>
+                    </div>
+                                     
+                    <div class="right">
+                      <br><br>
+                        <div class="form-group row1">
+                            <label for="email">Email Address</label>
+                            <input type="email" class="form-control" id="email" autocomplete="on" required placeholder="Enter email">
+                            <p id="emailSpan">Please enter a valid name</p>
+                           
+                        </div>
+                        <div class="form-group row2">
+                            <label for="Phone number">Phone Number</label>
+                            <input type="number" class="form-control" id="number" required placeholder="Enter Phone number">
+                            <p id="phoneSpan">Please enter a valid name</p>
+                           
+                        </div>
+                        <div class="form-group row3">
+                            <label for="Select your ans">Select your answer</label>
+                            <select name="" id="radio" class="form-control">
+                               
+                                <option value="" selcted>Javascript</option>
+                                <option value="">Node js</option>
+                            </select>
+                            <p id="selectSpan" >Please enter a valid name</p>
+                        </div>
+                           
+                          <div class="form-group row4">
+                            <label for="answer">Submit your queries</label>
+                            <input type="text" class="form-control" id="answer" placeholder="Submit your answer">
+                           
+                          </div>
+                
+                         
+                         <button type="button" name="submit" value="submit" class="btn btn-primary registerButton rounded-pill" onclick="validateForm()">Register</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+        <div class="tableContainer">
+          <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">First Name</th>
+                    <th scope="col">Last Name</th>
+                    <th>Password</th>
+                    <th scope="col">Email</th>
+                    <th>Gender</th>
+                    <th scope="col">Phone no.</th>
+                    <!-- <th>Selected Answer</th> -->
+                    <!-- <th>Query</th> -->
+                    
+                </tr>
+                
+              </thead>
+              <!-- <tbody id="tbody"> -->
+                <!-- <tr> -->
+                   <!-- <td scope="row">Mark</td>
+                    <td>Mark</td> 
+                     <td>Otto</td>
+                    <td>Ayushi </td>                     -->
+                <!-- </tr> -->
+                <!-- <tr>
+                  <td scope="row">Mark</td>
+                   <td>Mark</td> 
+                    <td>Otto</td>
+                   <td>Ayushi </td>                    
+               </tr> -->
+              <!-- </tbody> -->
+            </table>
+      
+
+
+
+
+
+
+          </div>    
+    
+</body>
+<script src="index4.js"></script>
+
+</html>
