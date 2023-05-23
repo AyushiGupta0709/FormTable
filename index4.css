@@ -81,7 +81,7 @@ form{
     
 } 
 .left{
-    background-color: #33ccff;
+    /* background-color: #33ccff; */
     width: 50%;
     height: 100%;
     padding-top: 45px;
@@ -89,7 +89,7 @@ form{
 
 }
 .right{
-    background-color: hotpink;
+    /* background-color: hotpink; */
     width: 50%;
     height: 100%;
 
